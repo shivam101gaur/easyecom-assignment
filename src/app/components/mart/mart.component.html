@@ -2,9 +2,10 @@
 <h2>
     in this component view all the items/products available in the mart
 </h2>
-
-<div class="itemcard">
-    <h2> {{sampleitem.name}} </h2>
-    <h3>Price : {{sampleitem.price}} </h3>
-    <button (click)="moveToCart()">Move to Cart</button>
+<div class="listcontainer" >
+    <div class="itemcard">
+        <h2> {{sampleitem.name}} </h2>
+        <h3>Price : {{sampleitem.price}} </h3>
+        <button (click)="moveToCart()">Move to Cart</button>
+    </div>
 </div>

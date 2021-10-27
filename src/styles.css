@@ -4,4 +4,7 @@ button {
     padding: 10px;
     border-radius: 15px;
 }
+.listcontainer{
+    display: flex;flex-wrap: wrap;
+}
 /* You can add global styles to this file, and also import other style files */
