@@ -3,6 +3,7 @@ button {
     color: black;
     padding: 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .listcontainer{
     display: flex;flex-wrap: wrap;
