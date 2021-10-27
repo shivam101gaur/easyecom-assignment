@@ -1,27 +1,55 @@
-# EasyecomAssignment
+# **Stimulating a MART**
+# Easyecom Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 
-## Development server
+## Note
+1. Clone the repository
+    ```
+    git clone https://github.com/shivam101gaur/easyecom-assignment.git
+    ```
+2. Do not install any third party packages
+3. install npm packages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+   ```
+   npm i
+   ```
+4. Start the Data base server at [Port : 3000](http://localhost:3000/)
+    ```
+    npm run dbserver
+    ```
+5. DB server will start at [Port : 3000](http://localhost:3000/)
+    ```
+    http://localhost:3000/
+    ```
+## TODO 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. Consume the [items](http://localhost:3000/items) API in  your code for CRUD operations
+    ```
+    http://localhost:3000/items
+    ```
 
-## Build
+***NOTE :*** Keep the components' relation strucutre same.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Parent Component** :  APP Component |
+**Child Components** : Mart Component , Cart Component
 
-## Running unit tests
+## Functionalites Required 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+7. View Mart Items
+    - Display all the items in Mart Component.
+   - Show name and price of item in the card.
+8. Move items to cart 
+   - remove item from mart component
+   - add it to cart component
+   - add items to bill list and calculate the total bill 
+9. Remove items from cart 
+   - remove item from cart component
+   - put it back in mart component
+10. Buy/Checkout items 
+    - If sufficient amount in wallet,only then allow checkout.
+    - clear the cart
+    - Deduct total bill amount from wallet
+    
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
