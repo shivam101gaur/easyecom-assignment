@@ -37,7 +37,7 @@
 ## Functionalites Required 
 
 7. View Mart Items
-    - Display all the items in Mart Component.
+    - Display all the items in Mart Component using Items API.
    - Show name and price of item in the card.
 8. Move items to cart 
    - remove item from mart component
@@ -49,6 +49,7 @@
 10. Buy/Checkout items 
     - If sufficient amount in wallet,only then allow checkout.
     - clear the cart
+    - Delete the bought item from items API/Database
     - Deduct total bill amount from wallet
     
 
